@@ -1,0 +1,17 @@
+package Exercise1;
+
+public class Question3 {
+	public static void main(String[] args) {
+		int min = 0;
+		int max = 99999;
+		int a = (int) (Math.random() * max) + min;
+		while (a < 10000) {
+			a = a * 10;
+		}
+		System.out.printf("===Question2======\n");
+		System.out.println("Số ngẫu nhiên: " + a);
+		System.out.println("======Question3=======");
+		String b = String.valueOf(a);
+		System.out.println("Hai số cuối: " + b.substring(3));
+	}
+}
